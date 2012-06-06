@@ -1,0 +1,11 @@
+require 'rubygems'
+require 'rake'
+require 'rspec/core/rake_task' # rspec / rake integration
+
+RSpec::Core::RakeTask.new(:spec) do |t|
+  #t.rspec_path = Dir.glob('spec/**/*_spec.rb')
+  #t.rspec_ << '--format specdoc'
+  #t.rcov = true
+end
+
+task :default => :spec
