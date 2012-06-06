@@ -10,6 +10,6 @@ describe 'MyApp' do
   it 'should run a simple test' do
     get '/'
     last_response.status.should == 200
-    last_response.body.should == "O hurro"
+    last_response.body.should == "Hello silly thing"
   end
 end
